@@ -61,8 +61,8 @@ fun ArtSpaceScreen(modifier: Modifier = Modifier) {
     val thirdArtwork = R.drawable._3
     val fourthArtwork = R.drawable._4
 
-    var title by remember { mutableStateOf(R.string.denji) }
-    var year by remember { mutableStateOf(R.string.denji_year) }
+    var title by remember { mutableStateOf(R.string._1) }
+    var year by remember { mutableStateOf(R.string._1_year) }
     var currentArtwork by remember { mutableStateOf(firstArtwork) }
     var imageResource by remember { mutableStateOf(currentArtwork) }
 
@@ -92,23 +92,23 @@ fun ArtSpaceScreen(modifier: Modifier = Modifier) {
                     when (currentArtwork) {
                         firstArtwork -> {
                             currentArtwork = fourthArtwork
-                            title = R.string.naruto
-                            year = R.string.naruto_year
+                            title = R.string._4
+                            year = R.string._4_year
                         }
                         secondArtwork -> {
                             currentArtwork = firstArtwork
-                            title = R.string.denji
-                            year = R.string.denji_year
+                            title = R.string._1
+                            year = R.string._1_year
                         }
                         thirdArtwork -> {
                             currentArtwork = thirdArtwork
-                            title = R.string.zero_two
-                            year = R.string.zero_two_year
+                            title = R.string._2
+                            year = R.string._2_year
                         }
                         else -> {
                             currentArtwork = thirdArtwork
-                            title = R.string.sanji
-                            year = R.string.sanji_year
+                            title = R.string._3
+                            year = R.string._3_year
                         }
                     }
                 },
@@ -133,23 +133,23 @@ fun ArtSpaceScreen(modifier: Modifier = Modifier) {
                     when (currentArtwork) {
                         firstArtwork -> {
                             currentArtwork = secondArtwork
-                            title = R.string.zero_two
-                            year = R.string.zero_two_year
+                            title = R.string._2
+                            year = R.string._2_year
                         }
                         secondArtwork -> {
                             currentArtwork = thirdArtwork
-                            title = R.string.sanji
-                            year = R.string.sanji_year
+                            title = R.string._3
+                            year = R.string._3_year
                         }
                         thirdArtwork -> {
                             currentArtwork = fourthArtwork
-                            title = R.string.naruto
-                            year = R.string.naruto_year
+                            title = R.string._4
+                            year = R.string._4_year
                         }
                         else -> {
                             currentArtwork = firstArtwork
-                            title = R.string.denji
-                            year = R.string.denji_year
+                            title = R.string._1
+                            year = R.string._1_year
                         }
                     }
                 },

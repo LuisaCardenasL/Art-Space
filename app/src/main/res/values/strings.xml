@@ -1,7 +1,21 @@
 <resources>
     <string name="app_name">Art Space</string>
-    <string name="denji">Denji</string>
-    <string name="denji_year">2023</string>
+    <string name="_1">La llegada</string>
+    <string name="_1_year">Junio 2023</string>
+    <string name="_1_description">El primer dia que llegamos a casa</string>
+    <string name="_2">Rengar</string>
+    <string name="_2_year">Junio 2023</string>
+    <string name="_2_description">Me gusta acompa;arla mientras hace los trabajos</string>
+    <string name="_3">Moon</string>
+    <string name="_3_year">Junio 2023</string>
+    <string name="_3_description">Que agustito se esta</string>
+    <string name="_4">Rengar</string>
+    <string name="_4_year">Junio 2023</string>
+    <string name="_4_description">nadie supera mi carita</string>
+
+
+
+
     <string name="zero_two">Zero Two</string>
     <string name="zero_two_year">2021</string>
     <string name="sanji">Sanji</string>
