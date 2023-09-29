@@ -1,25 +1,93 @@
 <resources>
     <string name="app_name">Art Space</string>
-    <string name="_1">La llegada</string>
-    <string name="_1_year">Junio 2023</string>
-    <string name="_1_description">El primer dia que llegamos a casa</string>
-    <string name="_2">Rengar</string>
-    <string name="_2_year">Junio 2023</string>
-    <string name="_2_description">Me gusta acompa;arla mientras hace los trabajos</string>
-    <string name="_3">Moon</string>
-    <string name="_3_year">Junio 2023</string>
-    <string name="_3_description">Que agustito se esta</string>
-    <string name="_4">Rengar</string>
-    <string name="_4_year">Junio 2023</string>
-    <string name="_4_description">nadie supera mi carita</string>
 
+    <string name="llegada">Llegada</string>
+    <string name="llegada_year">Junio 2023</string>
+    <string name="llegada_description">Primera vez que los conoci.</string>
 
+    <string name="rengarchikito">Rengar</string>
+    <string name="rengarchikito_year">Junio 2023</string>
+    <string name="rengarchikito_description">Desde que llegue me gusta vigilar que si haga los trabajos.</string>
 
+    <string name="moonshita">Moon</string>
+    <string name="moonshita_year">Junio 2023</string>
+    <string name="moonshita_decription">Desde que llegue dije que la cama era mia y de vez en cuando la comparto con mis padres.</string>
 
-    <string name="zero_two">Zero Two</string>
-    <string name="zero_two_year">2021</string>
-    <string name="sanji">Sanji</string>
-    <string name="sanji_year">2022</string>
-    <string name="naruto">Naruto</string>
-    <string name="naruto_year">2020</string>
+    <string name="renguitar">Rengar</string>
+    <string name="renguitar_year">Junio 2023</string>
+    <string name="renguitar_description">A mi hermana le toco soportar porque la cama tambien es mia.</string>
+
+    <string name="acompanando1">Rengar y Moon</string>
+    <string name="acompanando1_year">Julio 2023</string>
+    <string name="acompanando1_description">Nos volvimos muy unidos a los humanos que nos alimentan asi que dormimos siempre donde ellos estan</string>
+
+    <string name="acompanando2">Apodos</string>
+    <string name="acompanando2_year">Julio 2023</string>
+    <string name="acompanando2_description">De cariño nos empezaron a decir Renguitar y Moonshita</string>
+
+    <string name="rengar">Orejitas</string>
+    <string name="rengar_year">Julio 2023</string>
+    <string name="rengar_description">Mi humana dice que tengo orejas grandes y me empezo a llamar orejitas</string>
+
+    <string name="moonchikita">Moon</string>
+    <string name="moonchikita_year">Julio 2023</string>
+    <string name="moonchikita_description">Empece a disfurtar a dormir demasiado cerca de mi humana</string>
+
+    <string name="acompanando3">Monshita y Renguitar</string>
+    <string name="acompanando3_year">Julio 2023</string>
+    <string name="acompanando3_description">Como dijimos siempre con los humanos</string>
+
+    <string name="moon">Palomita</string>
+    <string name="moon_year">Julio 2023</string>
+    <string name="moon_description">Dicen que maullo rarito y mi humana me empezo a llamar Palomita</string>
+
+    <string name="vacaciones">Vacaciones</string>
+    <string name="vacaciones_year">Julio 2023</string>
+    <string name="vacaciones_description">Los humanos decidieron irse de viaje nos dejaron en casa de los abuelos</string>
+
+    <string name="moonaws">Moon AWS</string>
+    <string name="moonaws_year">Agosto 2023</string>
+    <string name="moonaws_description">Vigilando que mi humana si estudie para su certificado</string>
+
+    <string name="rengaru">Rengar estudioso</string>
+    <string name="rengaru_year">Agosto 2023</string>
+    <string name="rengaru_description">Yo tambien queria ir a la U</string>
+
+    <string name="lengua">Moon</string>
+    <string name="lengua_year">Agosto 2023</string>
+    <string name="lengua_description">Cuando duermo a veces saco la lengua</string>
+
+    <string name="castradito">Sin bolitas</string>
+    <string name="castradito_year">Septiembre 2023</string>
+    <string name="castradito_description">Adoptado pero a que costo</string>
+
+    <string name="juego1">Primera escena</string>
+    <string name="juego1_year">Septiembre 2023</string>
+    <string name="juego1_description">La humana me hizo un juguete</string>
+
+    <string name="juego2">Segunda escena</string>
+    <string name="juego2_year">Septiembre 2023</string>
+    <string name="juego2_description">La humana nos* hizo un juguete</string>
+
+    <string name="juego3">Ultima escena</string>
+    <string name="juego3_year">Septiembre 2023</string>
+    <string name="juego3_description">Creo que Rengar no sabe compartir</string>
+
+    <string name="esperando">Monshita</string>
+    <string name="esperando_year">Septiembre 2023</string>
+    <string name="esperando_description">Esperando que el señor padre termine su certificacion, espero lo gane</string>
+
+    <string name="maldades">Rengar curioso</string>
+    <string name="maldades_year">Septiembre 2023</string>
+    <string name="maldades_description">Segun la humana no debo estar aqui pero no me importa lo que piense</string>
+
+    <string name="juntos">Monshita y Renguitar</string>
+    <string name="juntos_year">2023</string>
+    <string name="juntos_description">Y somos inseparables, y los bebes ya no son tan bebes</string>
+
+    <string name="previous_button_text">Previous</string>
+    <string name="next_button_text">Next</string>
+
+    <string name="nombre_cod">Luisa Maria Cardenas Lopez, 1823494</string>
+
 </resources>
