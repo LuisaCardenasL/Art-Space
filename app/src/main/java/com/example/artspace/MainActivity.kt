@@ -35,21 +35,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.artspace.ui.theme.ArtSpaceTheme
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.unit.Dp
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.dp
-
-
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -99,7 +86,6 @@ fun ArtSpaceScreen(modifier: Modifier = Modifier) {
     var title by remember { mutableStateOf(R.string.llegada) }
     var year by remember { mutableStateOf(R.string.llegada_year) }
     var description by remember { mutableStateOf(R.string.llegada_description) }
-    var nombre by remember { mutableStateOf(R.string.nombre_cod) }
     var imageResource by remember { mutableStateOf(artworkList[currentArtworkIndex]) }
 
     // Función para actualizar el título y el año en función del índice actual
@@ -179,36 +165,42 @@ fun ArtSpaceScreen(modifier: Modifier = Modifier) {
         imageResource = artworkList[currentArtworkIndex]
     }
 
-    Text(
-        text = stringResource(id = nombre),
-        fontWeight = FontWeight.Normal,
-        color = colorResource(id = R.color.gray_900),
-        fontSize = 14.sp,
-        textAlign = TextAlign.Center
-    )
     Column(
         modifier = modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
+        Spacer(
+            modifier = Modifier.size(10.dp)
+        )
+
+        Text(
+            text = stringResource(R.string.name_code),
+            color = colorResource(id = R.color.softlila),
+        )
+
         ArtworkImage(
             currentArtwork = imageResource
         )
+
         Spacer(
-            modifier = modifier.size(16.dp)
+            modifier = modifier.size(10.dp)
         )
+
         ArtworkTitle(
             title = title,
             year = year,
         )
+
         Text(
             text = stringResource(id = description),
             fontWeight = FontWeight.Normal,
-            color = colorResource(id = R.color.gray_900),
+            color = colorResource(id = R.color.darklila),
             fontSize = 14.sp,
             textAlign = TextAlign.Center
         )
+
         Spacer(
-            modifier = modifier.size(25.dp)
+            modifier = modifier.size(30.dp)
         )
 
         Row(
@@ -225,7 +217,8 @@ fun ArtSpaceScreen(modifier: Modifier = Modifier) {
                     updateTitleAndYear()
                 },
                 colors = ButtonDefaults.buttonColors(
-                    contentColor = colorResource(id = R.color.blue_100)
+                    contentColor = colorResource(id = R.color.lila),
+                    containerColor = colorResource(id = R.color.lila)
                 ),
                 elevation = ButtonDefaults.elevatedButtonElevation(
                     defaultElevation = 1.dp,
@@ -242,24 +235,26 @@ fun ArtSpaceScreen(modifier: Modifier = Modifier) {
             }
 
             // Botón de reinicio
-            IconButton(
-                onClick = {
-                    currentArtworkIndex = 0
-                    updateTitleAndYear()
-                },
-                modifier = Modifier
-                    .background(MaterialTheme.colorScheme.primary)
-                    .size(48.dp)
-                    .padding(8.dp),
-                content = {
-                    Icon(
-                        painter = painterResource(id = R.drawable.ic_reset),
-                        contentDescription = "Reset Gallery",
-                        tint = Color.White
-                    )
-                }
-            )
-
+            Button(onClick = {
+                currentArtworkIndex = 0
+                updateTitleAndYear()
+            },
+                colors = ButtonDefaults.buttonColors(
+                    contentColor = colorResource(id = R.color.lila),
+                    containerColor = colorResource(id = R.color.lila)
+                ),
+                elevation = ButtonDefaults.elevatedButtonElevation(
+                    defaultElevation = 1.dp,
+                    pressedElevation = 0.dp,
+                    focusedElevation = 0.dp,
+                )
+            ) {
+                Image(
+                    painter = painterResource(R.drawable.ic_reset),
+                    contentDescription = null,
+                    modifier = Modifier.size(20.dp)
+                )
+            }
 
             Button(
                 onClick = {
@@ -271,7 +266,8 @@ fun ArtSpaceScreen(modifier: Modifier = Modifier) {
                     updateTitleAndYear()
                 },
                 colors = ButtonDefaults.buttonColors(
-                    contentColor = colorResource(id = R.color.blue_100)
+                    contentColor = colorResource(id = R.color.lila),
+                    containerColor = colorResource(id = R.color.lila)
                 ),
                 elevation = ButtonDefaults.elevatedButtonElevation(
                     defaultElevation = 1.dp,
@@ -292,8 +288,6 @@ fun ArtSpaceScreen(modifier: Modifier = Modifier) {
 
 }
 
-
-
 @Composable
 fun ArtworkImage(
     modifier: Modifier = Modifier,
@@ -310,8 +304,6 @@ fun ArtworkImage(
     )
 }
 
-
-
 @Composable
 fun ArtworkTitle(
     @StringRes title: Int,
@@ -323,13 +315,13 @@ fun ArtworkTitle(
         Text(
             text = stringResource(id = title),
             fontWeight = FontWeight.Bold,
-            color = colorResource(id = R.color.blue_100),
+            color = colorResource(id = R.color.lila),
             fontSize = 32.sp,
         )
         Text(
             text = stringResource(id = year),
             fontWeight = FontWeight.Medium,
-            color = colorResource(id = R.color.gray_300),
+            color = colorResource(id = R.color.softlila),
             fontSize = 16.sp,
         )
     }
